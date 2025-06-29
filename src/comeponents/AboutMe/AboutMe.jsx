@@ -63,7 +63,6 @@ const AboutMe = () => {
               </div>
             </Slide>
 
-            {/* Animated button */}
             <Slide direction="up" triggerOnce={false}>
               <div className="pt-4">
                 <Link
