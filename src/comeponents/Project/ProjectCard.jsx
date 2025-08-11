@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router";
 const ProjectCard = () => {
@@ -7,7 +10,13 @@ const ProjectCard = () => {
     threshold: 0.1,
     triggerOnce: false,
   });
-
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  }, []);
   const projects = [
     {
       id: 1,
@@ -21,7 +30,7 @@ const ProjectCard = () => {
       id: 2,
       title: "SpeakFlow",
       description:
-        "SpeakFlow aims to create an engaging platform for bloggers and readers. It encourages open conversations, creativity, and content discovery.",
+        "SpeakFlow is an interactive blogging platform where users can write blogs, save their favorites, filter content, and leave comments.",
       image: "https://i.ibb.co/fdCG3Ss1/Screenshot-2025-06-28-211705.png",
       live: "https://blogs-website-a11b11.web.app",
     },
@@ -37,7 +46,7 @@ const ProjectCard = () => {
 
   return (
     <section id="projects" ref={ref} className="py-20 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className=" w-11/12 lg:max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -54,8 +63,9 @@ const ProjectCard = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
+              data-aos="flip-right"
               key={project.id}
-              className="relative w-80 rounded-2xl overflow-hidden bg-gradient-to-br from-indigo-700 to-purple-600 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10"
+              className="relative  rounded-2xl overflow-hidden bg-gradient-to-br from-indigo-700 to-purple-600 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10"
             >
               {/* Card Header with Wave Design */}
               <div className="h-32 relative overflow-hidden">

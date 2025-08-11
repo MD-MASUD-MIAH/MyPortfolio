@@ -1,6 +1,6 @@
 import { Slide } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
-import { Link } from 'react-scroll'
+import { Link } from "react-scroll";
 const AboutMe = () => {
   const [sectionRef, inView] = useInView({
     threshold: 0.2, // Triggers when 20% of element is visible
@@ -11,9 +11,9 @@ const AboutMe = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="py-20 px-4 bg-white dark:bg-gray-900"
+      className="py-20  bg-white dark:bg-gray-900"
     >
-      <div className=" w-11/12 md:max-w-7xl mx-auto">
+      <div className="  w-11/12 lg:max-w-7xl mx-auto">
         {/* Will animate every time it comes into view */}
         <Slide direction="up" triggerOnce={false} triggerInView={inView}>
           <div className="space-y-8">
@@ -40,9 +40,13 @@ const AboutMe = () => {
             <Slide direction="up" cascade damping={0.1} triggerOnce={false}>
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  I dream of creating a moment in my life where my struggle,
-                  determination, and success make people rise to their feet in
-                  applause—just like they did for Ben Stokes.
+                  I am Masud,I started coding with curiosity and have grown by
+                  building real projects and learning new technologies,I love
+                  creating interactive web applications that solve problems and
+                  provide great user experiences.I dream of creating a moment in
+                  my life where my struggle, determination, and success make
+                  people rise to their feet in applause—just like they did for
+                  Ben Stokes.
                 </p>
 
                 <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -66,8 +70,8 @@ const AboutMe = () => {
             <Slide direction="up" triggerOnce={false}>
               <div className="pt-4">
                 <Link
-                smooth={true}
-                duration={500}
+                  smooth={true}
+                  duration={500}
                   to="contact"
                   className="inline-block px-8 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 hover:scale-105"
                 >

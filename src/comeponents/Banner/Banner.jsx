@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin,FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect";
 import masud from "../../assets/IMG-20250626-WA0006.jpg";
@@ -68,14 +68,14 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative bg-[url('https://i.ibb.co/nsB7G8M1/Flux-Dev-highresolution-stock-photo-of-A-modern-Git-Hub-banner-1-1.jpg')] bg-center bg-cover bg-no-repeat h-[calc(100vh-100px)] overflow-hidden">
+    <div className="relative bg-[url('https://i.ibb.co/nsB7G8M1/Flux-Dev-highresolution-stock-photo-of-A-modern-Git-Hub-banner-1-1.jpg')] bg-center bg-cover bg-no-repeat md:h-[calc(100vh-100px)] overflow-hidden">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-gray-900/60"></div>
 
       <section
         id="home"
         ref={ref}
-        className="relative z-10 md:py-40 py-10 w-11/12 md:max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-4 sm:px-6 lg:px-8 "
+        className="relative z-10 md:py-16 xl:py-40 py-10 w-11/12 md:max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-4 sm:px-6 lg:items-center md:items-center lg:px-8 "
       >
         <motion.div
           className="md:w-1/2"
@@ -101,7 +101,7 @@ const Banner = () => {
           </motion.h2>
 
           <motion.div
-            className="text-lg mb-8 min-h-[80px] text-gray-300"
+            className="text-lg md:mb-8 min-h-[80px] text-gray-300"
             variants={itemVariants}
           >
             <Typewriter
