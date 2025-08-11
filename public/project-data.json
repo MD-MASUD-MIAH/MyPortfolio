@@ -1,68 +1,100 @@
 [
   {
     "id": 1,
-    "title": "Plant Care Tracker",
-    "description": "Beautiful application to manage your plant collection with watering reminders, care tips, and plant health tracking.",
+    "image": "https://i.ibb.co.com/7xbRrkfH/Screenshot-2025-08-11-140751.png",
+    "title": "AuraFit",
+    "description": "AuraFit is a complete fitness tracking and trainer booking platform designed to connect users with expert trainers, manage classes, book sessions, and engage in a supportive fitness community.",
+    "technologies": [
+      "Stripe",
+      "Node.js",
+      "React",
+      "JavaScript",
+      "Tailwind CSS"
+    ],
     "features": [
-      { "icon": "🌱", "text": "Plant Add" },
-      { "icon": "💧", "text": "Watering Tracker" },
-      { "icon": "📱", "text": "Responsive Design" },
-      { "icon": "💬", "text": "Interactive UI" }
+      {
+        "icon": "👤",
+        "text": "Secure login with role-based access (Admin, Trainer, Member)"
+      },
+      {
+        "icon": "💪",
+        "text": "Trainer listings, class bookings, Stripe payments"
+      },
+      {
+        "icon": "🗳️",
+        "text": "Community forum with voting, badges, and reviews"
+      },
+      {
+        "icon": "📊",
+        "text": "Dashboards for managing classes, trainers, and finances"
+      }
     ],
-    "technologies": ["JavaScript", "React", "Express", "Mongodb"],
-    "images": [
-      "https://i.ibb.co/rfzS7NL1/Screenshot-2025-06-28-205708.png",
-      "https://i.ibb.co/4g3K3p3M/Screenshot-2025-06-28-211351.png",
-      "https://i.ibb.co/Kz684Lg6/Screenshot-2025-06-28-210334.png",
-      "https://i.ibb.co/r2DK4VJp/Screenshot-2025-06-28-205547.png"
+    "challenges": [
+      " Backend search & pagination optimization",
+      "Secure Stripe payment integration",
+      "Complex role-based dashboard logic"
     ],
+    "futurePlans": [
+      "AI-powered trainer recommendations",
+      "Live class streaming & recordings",
+      "Mobile app version for members"
+    ],
+
     "links": {
-      "github": "https://github.com/MD-MASUD-MIAH/plantwarden-a10-client?tab=readme-ov-file",
-      "live": "https://plantwarden-10.web.app/"
+      "live": "https://event-explorer-auth.web.app/",
+      "github": "https://github.com/MD-MASUD-MIAH/b11a9-react-authentication-MD-MASUD-MIAH"
     }
   },
   {
     "id": 2,
-    "title": "Blog. Connect. Discover",
-    "description": "SpeakFlow aims to create an engaging platform for bloggers and readers. It encourages open conversations, creativity, and content discovery.",
+    "image": "https://i.ibb.co/fdCG3Ss1/Screenshot-2025-06-28-211705.png",
+    "title": "SpeakFlow",
+    "description": "SpeakFlow is an interactive blogging platform where users can write blogs, save their favorites, filter content, and leave comments.",
+    "technologies": ["React", "Express", "MongoDB", "Firebase"],
     "features": [
-      { "icon": "✏️", "text": "Easily edit" },
-      { "icon": "❤️", "text": "Add blogs wishlist" },
+      { "icon": "❤️", "text": "Add blogs to wishlist" },
       { "icon": "🔍", "text": "Filter and sort" },
-      { "icon": "💬", "text": "Comment on any blog" }
+      { "icon": "💬", "text": "Comment on any blog" },
+      { "icon": "✏️", "text": "Easily edit" }
     ],
-    "technologies": ["React", "Express", "Mongodb", "Firebase"],
-    "images": [
-      "https://i.ibb.co/fdCG3Ss1/Screenshot-2025-06-28-211705.png",
-      "https://i.ibb.co/hx9VWn0s/Screenshot-2025-06-28-212231.png",
-      "https://i.ibb.co/JR0W7fnL/Screenshot-2025-06-28-212321.png",
-      "https://i.ibb.co/Fb3ckJZB/Screenshot-2025-06-28-212147.png"
+    "challenges": [
+      "Ensuring fast response times for filtering and searching from the database",
+      "Securing Firebase Authentication and Express API"
     ],
+    "futurePlans": [
+      "Add blog sharing feature",
+      "Premium membership system with exclusive perks"
+    ],
+
     "links": {
-      "github": "https://github.com/MD-MASUD-MIAH/b11a11-client-side-MD-MASUD-MIAH",
-      "live": "https://blogs-website-a11b11.web.app/"
+      "live": "https://blogs-website-a11b11.web.app/",
+      "github": "https://github.com/MD-MASUD-MIAH/b11a11-client-side-MD-MASUD-MIAH"
     }
   },
   {
     "id": 3,
-    "title": "Where Entertainment Meets Simplicity",
-    "description": "Event Explorer is a modern entertainment-focused website where users can discover events and reserve seats with ease. Built with a sleek UI and smooth user experience in mind.",
+    "image": "https://i.ibb.co/rfzS7NL1/Screenshot-2025-06-28-205708.png",
+    "title": "Plant Care Tracker",
+    "description": "PlantWarden is a beautiful application to manage your plant collection with watering reminders, care tips, and plant health tracking.",
+    "technologies": ["JavaScript", "React", "Express", "MongoDB"],
     "features": [
-      { "icon": "🎟", "text": "Reserve seats" },
-      { "icon": "⚡", "text": "Fast and interactive" },
-      { "icon": "🎨", "text": "Beautiful, responsive UI" },
-      { "icon": "🖼", "text": "Smooth sliders" }
+      { "icon": "🌱", "text": "Add plants" },
+      { "icon": "💧", "text": "Watering tracker" },
+      { "icon": "📱", "text": "Responsive design" },
+      { "icon": "💬", "text": "Interactive UI" }
     ],
-    "technologies": ["Tailwindcss", "JavaScript", "React"],
-    "images": [
-      "https://i.ibb.co/j9G5xrG4/Screenshot-2025-06-28-220038.png",
-      "https://i.ibb.co/8LM6jk3m/Screenshot-2025-06-28-215854.png",
-      "https://i.ibb.co/ksfJH5p0/Screenshot-2025-06-28-215827.png",
-      "https://i.ibb.co/nMw6BsKc/Screenshot-2025-06-28-220005.png"
+    "challenges": [
+      "Managing accurate timing for plant watering reminders",
+      "Keeping the UI simple and fast-loading"
     ],
+    "futurePlans": [
+      "Add notification system",
+      "Implement plant health analysis feature"
+    ],
+
     "links": {
-      "github": "https://github.com/MD-MASUD-MIAH/b11a9-react-authentication-MD-MASUD-MIAH",
-      "live": "https://event-explorer-auth.web.app/"
+      "live": "https://plantwarden-10.web.app/",
+      "github": "https://github.com/MD-MASUD-MIAH/plantwarden-a10-client?tab=readme-ov-file"
     }
   }
 ]
