@@ -37,7 +37,7 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref}
-      className="py-20 px-4 bg-gray-50 dark:bg-gray-900"
+      className="py-20 px-4 bg-gray-50"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -55,7 +55,7 @@ const Projects = () => {
           <div className="w-20 h-1 bg-indigo-500 mx-auto"></div>
         </motion.div>
 
-        <motion.div
+       <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -390,7 +390,7 @@ const Projects = () => {
               </div>
             </motion.div>
           </Slide>
-        </motion.div>
+        </motion.div> 
       </div>
     </section>
   );

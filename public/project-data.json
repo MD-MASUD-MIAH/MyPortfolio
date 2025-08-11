@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Plant Care Tracker",
+    "description": "Beautiful application to manage your plant collection with watering reminders, care tips, and plant health tracking.",
+    "features": [
+      { "icon": "🌱", "text": "Plant Add" },
+      { "icon": "💧", "text": "Watering Tracker" },
+      { "icon": "📱", "text": "Responsive Design" },
+      { "icon": "💬", "text": "Interactive UI" }
+    ],
+    "technologies": ["JavaScript", "React", "Express", "Mongodb"],
+    "images": [
+      "https://i.ibb.co/rfzS7NL1/Screenshot-2025-06-28-205708.png",
+      "https://i.ibb.co/4g3K3p3M/Screenshot-2025-06-28-211351.png",
+      "https://i.ibb.co/Kz684Lg6/Screenshot-2025-06-28-210334.png",
+      "https://i.ibb.co/r2DK4VJp/Screenshot-2025-06-28-205547.png"
+    ],
+    "links": {
+      "github": "https://github.com/MD-MASUD-MIAH/plantwarden-a10-client?tab=readme-ov-file",
+      "live": "https://plantwarden-10.web.app/"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Blog. Connect. Discover",
+    "description": "SpeakFlow aims to create an engaging platform for bloggers and readers. It encourages open conversations, creativity, and content discovery.",
+    "features": [
+      { "icon": "✏️", "text": "Easily edit" },
+      { "icon": "❤️", "text": "Add blogs wishlist" },
+      { "icon": "🔍", "text": "Filter and sort" },
+      { "icon": "💬", "text": "Comment on any blog" }
+    ],
+    "technologies": ["React", "Express", "Mongodb", "Firebase"],
+    "images": [
+      "https://i.ibb.co/fdCG3Ss1/Screenshot-2025-06-28-211705.png",
+      "https://i.ibb.co/hx9VWn0s/Screenshot-2025-06-28-212231.png",
+      "https://i.ibb.co/JR0W7fnL/Screenshot-2025-06-28-212321.png",
+      "https://i.ibb.co/Fb3ckJZB/Screenshot-2025-06-28-212147.png"
+    ],
+    "links": {
+      "github": "https://github.com/MD-MASUD-MIAH/b11a11-client-side-MD-MASUD-MIAH",
+      "live": "https://blogs-website-a11b11.web.app/"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Where Entertainment Meets Simplicity",
+    "description": "Event Explorer is a modern entertainment-focused website where users can discover events and reserve seats with ease. Built with a sleek UI and smooth user experience in mind.",
+    "features": [
+      { "icon": "🎟", "text": "Reserve seats" },
+      { "icon": "⚡", "text": "Fast and interactive" },
+      { "icon": "🎨", "text": "Beautiful, responsive UI" },
+      { "icon": "🖼", "text": "Smooth sliders" }
+    ],
+    "technologies": ["Tailwindcss", "JavaScript", "React"],
+    "images": [
+      "https://i.ibb.co/j9G5xrG4/Screenshot-2025-06-28-220038.png",
+      "https://i.ibb.co/8LM6jk3m/Screenshot-2025-06-28-215854.png",
+      "https://i.ibb.co/ksfJH5p0/Screenshot-2025-06-28-215827.png",
+      "https://i.ibb.co/nMw6BsKc/Screenshot-2025-06-28-220005.png"
+    ],
+    "links": {
+      "github": "https://github.com/MD-MASUD-MIAH/b11a9-react-authentication-MD-MASUD-MIAH",
+      "live": "https://event-explorer-auth.web.app/"
+    }
+  }
+]

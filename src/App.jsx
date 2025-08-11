@@ -7,24 +7,25 @@ import Skills from "./comeponents/Skills/Skills";
 import Education from "./comeponents/Education/Education";
 import Projects from "./comeponents/Project/Project";
 import Contact from "./comeponents/Contact/Contact";
-import { BrowserRouter as Router } from 'react-router';
+import ProjectCard from "./comeponents/Project/ProjectCard";
+
 function App() {
   return (
-    <Router>
+    <>
       <Toaster></Toaster>
-      <Navbar></Navbar>
+     
       <Banner></Banner>
       <AboutMe></AboutMe>
       <Skills></Skills>
       <Education></Education>
-   
-<Projects></Projects>
+      <ProjectCard></ProjectCard>
+      
    
       <Contact></Contact>
 
 
       
-    </Router>
+    </>
   );
 }
 

@@ -12,8 +12,8 @@ const Education = () => {
     {
       id: 1,
       degree: "Bachelor of Arts.",
-      institution: "Government Barhamganj Collage",
-      year: "2021 - 2022",
+      institution: "National University | Bangladesh",
+      year: "2021 - 2024",
      
     },
     {
@@ -27,7 +27,7 @@ const Education = () => {
       id: 3,
       degree: "Secondary School Certificate.",
       institution: " Shahid Hossain  High School",
-      year: " 2014-2019",
+      year: "2014-2019",
      
     },
   ];

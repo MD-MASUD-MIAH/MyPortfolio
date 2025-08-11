@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll'
 import {
   FaCode,
   FaEnvelope,
@@ -9,23 +8,42 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
+import { useLocation, useNavigate } from "react-router";
+import { Link, scroller } from "react-scroll";
 import logo from "../../assets/programming-code.svg";
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleClick = () => {
+    if (location.pathname === "/") {
+      scroller.scrollTo("home", {
+        smooth: true,
+        duration: 500,
+      });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        scroller.scrollTo("home", {
+          smooth: true,
+          duration: 500,
+        });
+      }, 100);
+    }
+  };
+
   const links = (
     <>
       <Link
-      
-        to="home"
+        onClick={handleClick}
         className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
       >
         <FaHome className="mr-2" /> Home
       </Link>
       <Link
-      
-        to="projects" 
-         smooth={true}
-              duration={500}
-            
+        to="projects"
+        smooth={true}
+        duration={500}
         className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
       >
         <FaProjectDiagram className="mr-2" /> Projects
@@ -39,8 +57,8 @@ const Navbar = () => {
         <FaCode className="mr-2" /> Skills
       </Link>
       <Link
-       smooth={true}
-       duration={500}
+        smooth={true}
+        duration={500}
         to="about"
         className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
       >
@@ -58,7 +76,7 @@ const Navbar = () => {
   );
   return (
     <div className="shadow-lg sticky top-0 z-20 bg-black text-white">
-      <div className="navbar   max-w-7xl mx-auto ">
+      <div className="navbar   max-w-7xl mx-auto px-0 ">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -80,7 +98,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 text-black shadow"
             >
               {links}
             </ul>
@@ -99,7 +117,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <motion.a
-            href="https://drive.google.com/file/d/1zk4pGS1Qt4vZjNKmFEq5kFy1Wxgocw1L/view?usp=sharing"
+            href="https://drive.google.com/file/d/1K0BmWGvgCCJbEOffP-7VBeRB3zoFBYPv/view?usp=drive_link"
             download
             target="_blank"
             className="
@@ -118,8 +136,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             <FiDownload className="inline mr-2 text-base md:text-[16px]" />
-            <span className="md:block hidden text-sm ">Download </span>
-            <span className="text-sm">CV</span>
+            <span className=" text-sm ">Resume</span>
           </motion.a>
         </div>
       </div>

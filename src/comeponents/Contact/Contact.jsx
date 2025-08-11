@@ -45,7 +45,7 @@ const Contact = () => {
     <div className="max-w-7xl mx-auto mt-10">
       <section id="contact" className="mb-24">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 ">
             Let's{" "}
             <span className="text-indigo-600 dark:text-indigo-400">
               Connect

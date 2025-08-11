@@ -75,7 +75,7 @@ const Banner = () => {
       <section
         id="home"
         ref={ref}
-        className="relative z-10 md:py-30 py-10 w-11/12 md:max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-4 sm:px-6 lg:px-8 "
+        className="relative z-10 md:py-40 py-10 w-11/12 md:max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-4 sm:px-6 lg:px-8 "
       >
         <motion.div
           className="md:w-1/2"
