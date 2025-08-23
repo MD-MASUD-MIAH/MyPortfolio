@@ -8,7 +8,10 @@ import {
   FaLinkedin,
   FaPhone,
   FaWhatsapp,
-} from "react-icons/fa";
+  FaArrowRight 
+} from "react-icons/fa";  
+import { MdContactEmergency } from "react-icons/md";
+
 const Contact = () => {
   const form = useRef();
 
@@ -23,10 +26,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-    import.meta.env.VITE_SERVICE_ID,
-  import.meta.env.VITE_TEMPLATE_ID,
-  form.current,
-  import.meta.env.VITE_PUBLIC_KEY
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -57,7 +60,7 @@ const Contact = () => {
         <div className="bg-white p-8 ">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+              <h3 className="text-xl font-semibold mb-4"> <MdContactEmergency></MdContactEmergency> </h3>
               <p className="mb-6">
                 Feel free to reach out for collaborations or just a friendly
                 hello!
@@ -66,7 +69,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <FaEnvelope className="text-blue-600 mr-3" />
-                  <span>masudd424@gmail.com</span>
+                  <span>hossainmasood5@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <FaWhatsapp className="text-[#075e54]"></FaWhatsapp> /{" "}

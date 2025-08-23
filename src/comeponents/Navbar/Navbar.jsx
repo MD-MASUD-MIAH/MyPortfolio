@@ -117,7 +117,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <motion.a
-            href="https://drive.google.com/file/d/1K0BmWGvgCCJbEOffP-7VBeRB3zoFBYPv/view?usp=drive_link"
+            href="https://drive.google.com/file/d/11SoJrJcZFnWOzM0bCDwIpPo9pDxtliD5/view"
             download
             target="_blank"
             className="

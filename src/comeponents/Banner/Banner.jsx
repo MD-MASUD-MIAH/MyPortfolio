@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect";
-import masud from "../../assets/IMG-20250626-WA0006.jpg";
+
 
 const Banner = () => {
   // Animation variants
@@ -169,7 +169,7 @@ const Banner = () => {
         >
           <div className="relative">
             <img
-              src={masud}
+              src={"https://i.ibb.co.com/Fb5NNhNN/1743526656136-1.jpg"}
               alt="Masud Miah"
               className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4  border-blue-100 shadow-xl relative z-10"
             />
