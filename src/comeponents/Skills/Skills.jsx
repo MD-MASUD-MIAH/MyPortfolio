@@ -106,22 +106,34 @@ const Skills = () => {
     },
   };
 
+  const neonGreen = "#00FFA8";
+
   return (
-    <section id="skills" className="py-16 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" className="py-16 px-4 bg-gray-900">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: false }}
-          className="text-center mb-12"
+        <div
+          className="text-center mb-16 animate-fade-in"
+          style={{ animationDelay: "0.1s" }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-white">
-           Technologies {" "}
-            <span className="text-indigo-600 dark:text-indigo-400">I Use</span>
+          <h2 className="text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
+            <span
+              style={{
+                color: neonGreen,
+                textShadow: `0 0 10px ${neonGreen}`,
+              }}
+            >
+              Technologies
+            </span>{" "}
+            I Use
           </h2>
-          <div className="w-20 h-1 bg-indigo-500 mx-auto"></div>
-        </motion.div>
+          <div
+            className="w-24 h-1 mx-auto rounded-full mt-4"
+            style={{
+              backgroundColor: neonGreen,
+              boxShadow: `0 0 10px ${neonGreen}, 0 0 20px ${neonGreen}`,
+            }}
+          ></div>
+        </div>
 
         <motion.div
           variants={container}
@@ -135,14 +147,14 @@ const Skills = () => {
               key={index}
               variants={item}
               whileHover={{ scale: 1.05 }}
-              className="flex flex-col items-center justify-center w-full p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700"
+              className="flex flex-col items-center justify-center w-full p-4 bg-gray-800 rounded-xl shadow-md shadow-[#00FFA8] hover:shadow-lg transition-all duration-300 border border-gray-700"
             >
               <div
                 className={`${skill.color} h-24 w-24 flex items-center justify-center mb-3`}
               >
                 {skill.icon}
               </div>
-              <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">
+              <h3 className="text-lg font-medium text-gray-300">
                 {skill.name}
               </h3>
             </motion.div>

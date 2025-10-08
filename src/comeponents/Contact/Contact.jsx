@@ -8,8 +8,7 @@ import {
   FaLinkedin,
   FaPhone,
   FaWhatsapp,
-  FaArrowRight 
-} from "react-icons/fa";  
+} from "react-icons/fa";
 import { MdContactEmergency } from "react-icons/md";
 
 const Contact = () => {
@@ -44,23 +43,42 @@ const Contact = () => {
         }
       );
   };
+
+  const neonGreen = "#00FFA8";
   return (
-    <div className="max-w-7xl mx-auto mt-10">
-      <section id="contact" className="mb-24">
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 ">
-            Let's{" "}
-            <span className="text-indigo-600 dark:text-indigo-400">
-              Connect
-            </span>
+    <div className="max-w-7xl mx-auto mt-1 ">
+      <section id="contact" className="mb-24 ">
+        <div
+          className="text-center mb-16 animate-fade-in"
+          style={{ animationDelay: "0.1s" }}
+        >
+          <h2 className="text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
+            <span
+              style={{
+                color: neonGreen,
+                textShadow: `0 0 10px ${neonGreen}`,
+              }}
+            >
+              Let's
+            </span>{" "}
+            Connect
           </h2>
-          <div className="w-20 h-1 bg-indigo-500 mx-auto"></div>
+          <div
+            className="w-24 h-1 mx-auto rounded-full mt-4"
+            style={{
+              backgroundColor: neonGreen,
+              boxShadow: `0 0 10px ${neonGreen}, 0 0 20px ${neonGreen}`,
+            }}
+          ></div>
         </div>
 
-        <div className="bg-white p-8 ">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4"> <MdContactEmergency></MdContactEmergency> </h3>
+        <div className="bg-gray-900 ">
+          <div className="grid md:grid-cols-2 gap-8 mt-5 w-10/12 xl:w-full mx-auto">
+            <div className="text-white mt-2">
+              <h3 className="text-xl font-semibold mb-4">
+                {" "}
+                <MdContactEmergency></MdContactEmergency>{" "}
+              </h3>
               <p className="mb-6">
                 Feel free to reach out for collaborations or just a friendly
                 hello!
@@ -68,12 +86,12 @@ const Contact = () => {
 
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <FaEnvelope className="text-blue-600 mr-3" />
+                  <FaEnvelope className="text-[#00FFA8] mr-3" />
                   <span>hossainmasood5@gmail.com</span>
                 </div>
                 <div className="flex items-center">
-                  <FaWhatsapp className="text-[#075e54]"></FaWhatsapp> /{" "}
-                  <FaPhone className="text-blue-600 mr-3" />
+                  <FaWhatsapp className="text-[#00FFA8]"></FaWhatsapp> /{" "}
+                  <FaPhone className="text-[#00FFA8] mr-3" />
                   <span>+8801764091069</span>
                 </div>
               </div>
@@ -85,7 +103,7 @@ const Contact = () => {
                     href="https://github.com/MD-MASUD-MIAH"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-blue-600"
+                    className="text-white hover:text-blue-600"
                   >
                     <FaGithub size={24} />
                   </a>
@@ -93,7 +111,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/md-masud-miah-326186344"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-blue-600"
+                    className="text-white hover:text-blue-600"
                   >
                     <FaLinkedin size={24} />
                   </a>
@@ -101,7 +119,7 @@ const Contact = () => {
                     href="https://web.facebook.com/hossainmasooddhali"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-blue-600"
+                    className="text-white hover:text-[#00FFA8]"
                   >
                     <FaFacebook size={24} />
                   </a>
@@ -110,7 +128,11 @@ const Contact = () => {
             </div>
 
             <div>
-              <form ref={form} onSubmit={sendEmail} className="space-y-4">
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="space-y-4 text-white"
+              >
                 <div>
                   <label htmlFor="name" className="block mb-1 font-medium">
                     Your Name
@@ -150,7 +172,16 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="tom-btn text-white px-6 py-3">
+                <button
+                  type="submit"
+                  className=" text-xs px-3 py-1 md:px-4 md:py-2 gap-1 
+  relative group text-[#00FFA8] font-semibold rounded-full 
+  border border-[#00FFA8]
+  flex items-center justify-center transition-all duration-500
+  hover:scale-110 hover:shadow-[0_0_30px_#00FFA8]
+  shadow-[0_0_20px_#00FFA8] animate-pulse
+  hover:text-[#00FFA8] hover:border-[#00FFA8]"
+                >
                   Send Message
                 </button>
               </form>

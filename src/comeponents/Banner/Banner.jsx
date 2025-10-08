@@ -4,7 +4,6 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect";
 
-
 const Banner = () => {
   // Animation variants
   const containerVariants = {
@@ -169,7 +168,9 @@ const Banner = () => {
         >
           <div className="relative">
             <img
-              src={"https://i.ibb.co.com/Fb5NNhNN/1743526656136-1.jpg"}
+              src={
+                "https://i.ibb.co.com/fY6nY01D/Gemini-Generated-Image-o3c1oio3c1oio3c1.png"
+              }
               alt="Masud Miah"
               className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4  border-blue-100 shadow-xl relative z-10"
             />

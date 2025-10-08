@@ -26,7 +26,9 @@ const ProjectDetails = () => {
     return <p>Loading...</p>;
   }
 
-  console.log("single data", project);
+  console.log("single data", project); 
+
+  
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">

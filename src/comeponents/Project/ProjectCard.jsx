@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router";
@@ -44,21 +43,34 @@ const ProjectCard = () => {
     },
   ];
 
+  const neonGreen = "#00FFA8";
+
   return (
-    <section id="projects" ref={ref} className="py-20 px-4 bg-gray-50">
+    <section id="projects" ref={ref} className="py-20 px-4 bg-gray-900">
       <div className=" w-11/12 lg:max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+        <div
+          className="text-center mb-16 animate-fade-in"
+          style={{ animationDelay: "0.1s" }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-white">
-            What I’ve{" "}
-            <span className="text-indigo-600 dark:text-indigo-400">Built</span>
+          <h2 className="text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
+            <span
+              style={{
+                color: neonGreen,
+                textShadow: `0 0 10px ${neonGreen}`,
+              }}
+            >
+              What I’ve
+            </span>{" "}
+            Built
           </h2>
-          <div className="w-20 h-1 bg-indigo-500 mx-auto"></div>
-        </motion.div>
+          <div
+            className="w-24 h-1 mx-auto rounded-full mt-4"
+            style={{
+              backgroundColor: neonGreen,
+              boxShadow: `0 0 10px ${neonGreen}, 0 0 20px ${neonGreen}`,
+            }}
+          ></div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (

@@ -1,16 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import {
-  FaCode,
-  FaEnvelope,
-  FaHome,
-  FaProjectDiagram,
-  FaUser,
-} from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { useLocation, useNavigate } from "react-router";
 import { Link, scroller } from "react-scroll";
-import logo from "../../assets/programming-code.svg";
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -36,46 +28,46 @@ const Navbar = () => {
     <>
       <Link
         onClick={handleClick}
-        className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
+        className=" flex items-center px-3 py-2 font-bold hover:text-[#00FFA8] transition cursor-pointer"
       >
-        <FaHome className="mr-2" /> Home
+        Home
       </Link>
       <Link
         to="projects"
         smooth={true}
         duration={500}
-        className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
+        className="flex items-center px-3 py-2 font-bold hover:text-[#00FFA8] transition cursor-pointer"
       >
-        <FaProjectDiagram className="mr-2" /> Projects
+        Projects
       </Link>
       <Link
         to="skills"
         smooth={true}
         duration={500}
-        className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
+        className="flex items-center px-3 py-2 font-bold hover:text-[#00FFA8] transition cursor-pointer"
       >
-        <FaCode className="mr-2" /> Skills
+        Skills
       </Link>
       <Link
         smooth={true}
         duration={500}
         to="about"
-        className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
+        className="flex items-center px-3 py-2 font-bold hover:text-[#00FFA8] transition cursor-pointer"
       >
-        <FaUser className="mr-2" /> About
+        About
       </Link>
       <Link
         to="contact"
         smooth={true}
         duration={500}
-        className="flex items-center px-3 py-2 hover:text-blue-400 transition cursor-pointer"
+        className="flex items-center px-3 py-2 font-bold hover:text-[#00FFA8] transition cursor-pointer"
       >
-        <FaEnvelope className="mr-2" /> Contact
+        Contact
       </Link>
     </>
   );
   return (
-    <div className="shadow-lg sticky top-0 z-20 bg-black text-white">
+    <div className="shadow-lg sticky top-0 z-20 bg-black text-white border-b-1 border-[#00FFA8]">
       <div className="navbar    w-11/12 lg:max-w-7xl mx-auto px-0 ">
         <div className="navbar-start ">
           <div className="dropdown">
@@ -105,11 +97,11 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-2">
             <img
-              className="h-8 w-8 filter invert brightness-0"
-              src={logo}
+              className="h-12 w-12 "
+              src="https://i.ibb.co.com/Q7VXQ523/2.png"
               alt=""
             />
-            <h1 className="font-bold text-xl">MyMasa</h1>
+            <h1 className="font-bold text-xl text-[#00FFA8]">asud</h1>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -121,22 +113,20 @@ const Navbar = () => {
             download
             target="_blank"
             className="
-    px-3 py-1 md:px-4 md:py-2 gap-1 
-    bg-transparent text-white font-medium md:font-semibold 
-    rounded-full border border-white md:border-2 
-    transition-all duration-300 
-    hover:bg-white/10 hover:shadow-lg hover:shadow-white/20 
-    flex items-center justify-center
-    text-sm sm:text-base
-     sm:w-auto
-  "
+     px-3 py-1 md:px-4 md:py-2 gap-1 
+  relative group text-[#00FFA8] font-semibold rounded-full 
+  border border-[#00FFA8]
+  flex items-center justify-center transition-all duration-500
+  hover:scale-110 hover:shadow-[0_0_30px_#00FFA8]
+  shadow-[0_0_20px_#00FFA8] animate-pulse
+  hover:text-[#00FFA8] hover:border-[#00FFA8]"
             whileHover={{
               scale: 1.05,
             }}
             whileTap={{ scale: 0.95 }}
           >
             <FiDownload className="inline mr-2 text-base md:text-[16px]" />
-            <span className=" text-sm ">Resume</span>
+            <span className=" text-sm  text-[#00FFA8]">Resume</span>
           </motion.a>
         </div>
       </div>

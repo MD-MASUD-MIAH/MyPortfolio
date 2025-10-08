@@ -8,13 +8,14 @@ import Education from "./comeponents/Education/Education";
 import Projects from "./comeponents/Project/Project";
 import Contact from "./comeponents/Contact/Contact";
 import ProjectCard from "./comeponents/Project/ProjectCard";
+import Hero from "./comeponents/hero/Hero";
 
 function App() {
   return (
     <>
       <Toaster></Toaster>
      
-      <Banner></Banner>
+      <Hero></Hero>
       <AboutMe></AboutMe>
       <Skills></Skills>
       <Education></Education>
