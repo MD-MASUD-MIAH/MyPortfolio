@@ -103,7 +103,7 @@ const Contact = () => {
                     href="https://github.com/MD-MASUD-MIAH"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-blue-600"
+                    className="text-white hover:text-[#00FFA8] cursor-pointer"
                   >
                     <FaGithub size={24} />
                   </a>
@@ -111,7 +111,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/md-masud-miah-326186344"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-blue-600"
+                    className="text-white hover:text-[#00FFA8] cursor-pointer"
                   >
                     <FaLinkedin size={24} />
                   </a>
@@ -119,7 +119,7 @@ const Contact = () => {
                     href="https://web.facebook.com/hossainmasooddhali"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-[#00FFA8]"
+                    className="text-white hover:text-[#00FFA8] cursor-pointer"
                   >
                     <FaFacebook size={24} />
                   </a>

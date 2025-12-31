@@ -88,7 +88,7 @@ const Hero = () => {
                   href="https://www.linkedin.com/in/mdmasudmiah66"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative group text-[#00FFA8] p-2 h-13 w-13 rounded-xl border border-[#00FFA8]/60
+                  className="relative group text-[#00FFA8] p-2 h-13 w-13 rounded-xl border border-[#00FFA8]/60 cursor-pointer
              flex items-center justify-center transition-all duration-500
              hover:scale-110 hover:shadow-[0_0_25px_#00FFA8]
              shadow-[0_0_15px_#00FFA8] animate-pulse"
@@ -97,10 +97,10 @@ const Hero = () => {
                   <span className="absolute inset-0  bg-[#00FFA8]/10 blur-xl animate-ping"></span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/mdmasudmiah66"
+                  href="https://github.com/MD-MASUD-MIAH"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative group text-[#00FFA8] p-2 h-13 w-13 rounded-xl border border-[#00FFA8]/60
+                  className="relative group text-[#00FFA8] p-2 h-13 w-13 rounded-xl border border-[#00FFA8]/60 cursor-pointer
              flex items-center justify-center transition-all duration-500
              hover:scale-110 hover:shadow-[0_0_25px_#00FFA8]
              shadow-[0_0_15px_#00FFA8] animate-pulse"
@@ -113,7 +113,7 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group text-[#00FFA8] p-2 h-13 w-13 rounded-xl border border-[#00FFA8]/60
-             flex items-center justify-center transition-all duration-500
+             flex items-center justify-center transition-all duration-500 cursor-pointer
              hover:scale-110 hover:shadow-[0_0_25px_#00FFA8]
              shadow-[0_0_15px_#00FFA8] animate-pulse"
                 >
