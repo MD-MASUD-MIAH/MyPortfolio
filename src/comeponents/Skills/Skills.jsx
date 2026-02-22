@@ -115,7 +115,7 @@ const Skills = () => {
           className="text-center mb-16 animate-fade-in"
           style={{ animationDelay: "0.1s" }}
         >
-          <h2 className="text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
+          <h2 className="text-3xl md:text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
             <span
               style={{
                 color: neonGreen,

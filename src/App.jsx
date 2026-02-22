@@ -13,7 +13,8 @@ import Hero from "./comeponents/hero/Hero";
 function App() {
   return (
     <>
-      <Toaster></Toaster>
+      <div className="overflow-hidden">
+        <Toaster></Toaster>
      
       <Hero></Hero>
       <AboutMe></AboutMe>
@@ -23,6 +24,7 @@ function App() {
       
    
       <Contact></Contact>
+      </div>
 
 
       

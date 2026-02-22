@@ -28,7 +28,7 @@ const Contact = () => {
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_PUBLIC_KEY
+        import.meta.env.VITE_PUBLIC_KEY,
       )
       .then(
         (result) => {
@@ -40,7 +40,7 @@ const Contact = () => {
         (error) => {
           console.log(error.text);
           toast.error("Something went wrong. Please try again.");
-        }
+        },
       );
   };
 
@@ -52,7 +52,7 @@ const Contact = () => {
           className="text-center mb-16 animate-fade-in"
           style={{ animationDelay: "0.1s" }}
         >
-          <h2 className="text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
+          <h2 className="text-3xl md:text-4xl  font-extrabold mb-4 uppercase tracking-wider text-white">
             <span
               style={{
                 color: neonGreen,

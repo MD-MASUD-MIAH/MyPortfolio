@@ -2,6 +2,7 @@ import { FaChartLine, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 import { RiStackLine } from "react-icons/ri";
 import { TypeAnimation } from "react-type-animation";
+
 const Hero = () => {
   return (
     <div className="bg-[url(https://i.ibb.co.com/d4SmmSJ4/Lucid-Origin-A-minimalist-abstract-background-with-subtle-geom-3.jpg)] bg-cover bg-no-repeat ">
@@ -127,7 +128,7 @@ const Hero = () => {
               <h1></h1>
               <img
                 className="xl:h-180"
-                src="https://i.ibb.co.com/7tJCmVKF/Gemini-Generated-Image-o3c1oio3c1oio3c1-removebg-preview.png"
+                src="https://i.ibb.co/sdZ6pZDn/Gemini-Generated-Image-o3c1oio3c1oio3c1-removebg-preview.png"
               ></img>
             </div>
           </div>
